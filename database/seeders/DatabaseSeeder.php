@@ -57,6 +57,8 @@ class DatabaseSeeder extends Seeder
         $appartment1 = Appartment::create([
             'name' => 'Appartement T2',
             'short_name' => 'T2',
+            'is_commercial' => false,
+            'stage' => '1',
             'address_id' => $address1->id
         ]);
 

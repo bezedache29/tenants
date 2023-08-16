@@ -15,6 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('name')->unique();
             $table->string('short_name');
+            $table->boolean('is_commercial');
+            $table->string('stage');
             $table->foreignId('address_id')->constrained()->cascadeOnDelete();
             $table->timestamps();
             $table->softDeletes();
